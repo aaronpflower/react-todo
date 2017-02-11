@@ -1,6 +1,6 @@
 const React = require('react')
 const Input = require('../components/input')
-const TodoItem = require('../components/todoItem')
+const List = require('../components/list')
 
 const TodoList = React.createClass({
     getInitialState: function () {
@@ -31,8 +31,8 @@ const TodoList = React.createClass({
         console.log(this.state)
         return (
             <div>
-                < TodoItem
-                todoItem={this.state.todoList} />
+                < List
+                todoList={this.state.todoList} />
                 <Input
                 onUpdateTodo={this.handleUpdateTodo} 
                 onSubmitTodo={this.handleSubmitTodo} 
