@@ -4,7 +4,9 @@ const styles = require('../styles')
 
 function Item (props) {
     return (
-        <li>{props.todoItem}</li>
+        <li style={styles.item} className='col-xs-12'>
+            {props.todoItem}
+        </li>
     )
 }
 

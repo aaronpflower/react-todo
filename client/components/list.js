@@ -4,11 +4,11 @@ const styles = require('../styles')
 const Item = require('./item')
 
 function List (props) {
-    const todoNode = props.todoList.map(function(item) {
-        return (<Item todoItem={item.todo} />)
+    const todoNode = props.todoList.map(function(item, i) {
+        return (<Item todoItem={item.todo} key={i} />)
     })
     return (
-        <ul className="col-xs-12">
+        <ul className="row center-xs" style={styles.itemContainer} >
             {todoNode}
         </ul>
     )

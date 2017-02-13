@@ -4,18 +4,17 @@ const styles = require('../styles')
 
 function Input (props) {
     return (
-        <div className="col-xs-12">
-            <div className="row center-xs">
-                <input
-                    style={styles.input}
-                    type='text'
-                    placeholder='Add Todo'
-                    value={props.todo}
-                    onChange={props.onUpdateTodo}
-                />
-            </div>
+        <div className="row center-xs">
+            <input
+                className="col-xs-12"
+                style={styles.input}
+                type='text'
+                placeholder='Add Todo'
+                value={props.todo}
+                onChange={props.onUpdateTodo}
+            />
             <button
-                className="row"
+                className="col-xs-12"
                 style={styles.button}
                 className="btn btn-block btn-success"
                 type="submit"

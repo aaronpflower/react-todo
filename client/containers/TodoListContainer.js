@@ -23,14 +23,13 @@ const TodoList = React.createClass({
             todo: ''
         })
         return this.setState({
-            todoList: this.state.todoList.concat([{todo: todo}])
+            todoList: this.state.todoList.concat([{todo: todo, completed: false}])
         })
     },
 
     render: function() {
-        console.log(this.state)
         return (
-            <div>
+            <div className='col-xs-12'>
                 < List
                 todoList={this.state.todoList} />
                 <Input

@@ -1,6 +1,7 @@
 var styles = {
-    header: {
-        background: 'transparent'
+    mainContainer: {
+        maxWidth: '600px',
+        margin: 'auto'
     },
     space: {
         marginTop: '25px'
@@ -26,12 +27,24 @@ var styles = {
         boxSizing: 'inherit',
         height: '3.8rem',
         padding: '0.5rem',
-        width: '100%',
         color: '#1a1f52',
         marginBottom: '25px'
+    },
+    item: {
+        listStyle: 'none',
+        width: '100%',
+        border: '1px solid #35C5F2',
+        borderRadius: '0.4rem',
+        boxShadow: 'none',
+        boxSizing: 'inherit',
+        textAlign: 'left',
+        padding: '0.5rem',
+        color: '#1a1f52',
+        marginBottom: '25px'
+    },
+    itemContainer: {
+        padding: '0'
     }
-
-
 }
 
 module.exports = styles
